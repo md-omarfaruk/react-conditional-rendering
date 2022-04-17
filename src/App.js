@@ -7,9 +7,9 @@ function App() {
   const [dress, setDress] = useState(false);
 
   return (
-    <div className="App">
+    <div style={{backgroundColor: "cyan", padding: "50px"}} className="App">
       <h1>Panjabi or T-shirt: {dress.toString()} choice</h1>
-      <button onClick={()=> setDress(!dress)}>Toggle</button>
+      <button style={{backgroundColor: "greenyellow", padding: "5px 30px", border: "1px solid grey", borderRadius: "5px"}} onClick={()=> setDress(!dress)}>Toggle</button>
       <Conditional dress= {dress} ></Conditional>
     </div>
   );
